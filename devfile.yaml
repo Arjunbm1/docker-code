@@ -1,0 +1,25 @@
+schemaVersion: 2.1.0
+metadata:
+  name: docker-code
+  namespace: admin-che
+attributes:
+  che-theia.eclipse.org/sidecar-policy: mergeImage
+  dw.metadata.annotations:
+    che.eclipse.org/che-editor: eclipse/che-theia/latest
+    che.eclipse.org/devfile-source: |
+      url:
+        location: 'https://github.com/Arjunbm1/docker-code.git'
+      factory:
+        params: 'url=https://github.com/Arjunbm1/docker-code.git'
+    che.eclipse.org/last-updated-timestamp: '2022-08-30T07:38:44.317Z'
+  metadata-name-field: generateName
+  metadata-name-original-value: docker-code
+projects:
+  - git:
+      remotes:
+        origin: 'https://github.com/Arjunbm1/docker-code.git'
+    name: docker-code
+components: 
+  -type: dockerimage
+   alias: helloWorld
+   image: docker.io/library/hello-world:latest
