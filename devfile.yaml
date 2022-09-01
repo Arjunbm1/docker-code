@@ -20,6 +20,6 @@ projects:
         origin: 'https://github.com/Arjunbm1/docker-code.git'
     name: docker-code
 components: 
-  -type: dockerimage
-   alias: helloWorld
-   image: docker.io/library/hello-world:latest
+  - type: dockerimage
+    alias: helloWorld
+    image: docker.io/library/hello-world:latest
